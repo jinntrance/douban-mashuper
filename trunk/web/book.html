@@ -1,0 +1,67 @@
+<style>
+    body {
+        min-width: 357px;
+        overflow-x: hidden;
+    }
+
+    img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+    }
+</style>
+<html>
+<body>
+<form name="searchtool" target="_self" action="http://webpac.uestc.edu.cn/search~S1*chx/" method="post">
+    <select name="searchtype">
+        <option value="X"> 关键词</option>
+        <option value="t"> 题名</option>
+        <option value="a"> 著者</option>
+        <option value="d"> 主题</option>
+        <option value="c"> 索书号</option>
+        <option value="i" selected="selected"> 标准号</option>
+    </select>
+    &nbsp;
+    <input type="text" name="searcharg" size="30" maxlength="75" value="">
+    &nbsp;
+    <select name="searchscope">
+        <option value="1" selected="selected"> 全部馆藏</option>
+        <option value="2"> 沙河校区图书馆</option>
+        <option value="3"> 清水河校区图书馆</option>
+        <option value="4"> 分馆馆藏</option>
+        <option value="5"> 印刷型图书</option>
+        <option value="6"> 印刷型期刊</option>
+        <option value="7"> 电子图书</option>
+        <option value="8"> 电子期刊</option>
+        <option value="9"> 学位论文</option>
+        <option value="10"> 多媒体资料</option>
+    </select>
+    &nbsp;
+
+<span id="sort_cell">
+<select name="sortdropdown" id="sortdropdown" class="showInlineElem">
+    <option value="t">标题</option>
+    <option value="a">作者</option>
+    <option value="c">年</option>
+    <option value="r">反向年</option>
+    <option value="n">索书号</option>
+    <option value="m">资料种类</option>
+    <option value="-">系统排序</option>
+</select>
+    <input type="button" value="排序" name="sortbutton" id="sortbutton" class="showInlineElem"></span>
+    <input type="hidden" name="SORT" value="D">
+    <input type="hidden" name="extended" value="0">
+    <input type="submit"    name="SUBMIT"     value="检索">
+
+    <div>
+        <input type="checkbox" name="availlim" value="1"> <span class="availLimMessage">只搜索可借及可阅图书</span><br>
+    </div>
+    <div>
+        <input type="hidden" name="searchlimits" value="">
+        <input type="hidden" name="searchorigarg" value="">
+    </div>
+</form>
+</body>
+</html>

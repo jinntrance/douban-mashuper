@@ -1,0 +1,23 @@
+{
+  "name": "Douban Mashuper",
+  "version": "1.0",
+  "description": "It makes more Doubaner from UESTC happier.",
+  "background_page": "bg.html",
+  "browser_action": {
+    "default_title": "Lib of UESTC",
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+// "options_page": "options.html", 
+  "content_scripts": [
+    {
+      "matches": ["http://book.douban.com/subject/*"],
+      "css": ["style.css"],
+      "js": ["jquery-1.5.2.min.js","parse_book.js","recommend.js"]
+    }
+  ],
+  "permissions": [
+ "tabs", "http://*/*","https://*/*"  
+  ]
+}
+//chrome.browserAction.onClicked.addListener(function(Tab tab) {...});
