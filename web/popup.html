@@ -1,0 +1,11 @@
+<script src="parse_book.js"></script>
+<script src="recommend.js"></script>
+<script>
+   window.open("http://webpac.uestc.edu.cn/")
+   chrome.tabs.getSelected(null,function(tab) { 
+   $=tabs.window.$
+   tab.parse();
+   window.open(tab.form_url());
+  //window.open(tab.url)
+   }
+</script>
