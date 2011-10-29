@@ -2,8 +2,8 @@
 
 var re_url="http://webpac.uestc.edu.cn/acquire*chx";
 var r=book_to_recommend;
-alert(form_url())
-window.open(form_url(),'_blank')
+//alert(form_url())
+//window.open(form_url(),'_blank')
 function form_url(){
     var full_url=re_url+"?"+
     "author="+r.author+
