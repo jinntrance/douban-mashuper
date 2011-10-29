@@ -13,7 +13,7 @@
     {
       "matches": ["http://book.douban.com/subject/*"],
       "css": ["style.css"],
-      "js": ["js/jquery.js","js/parse_book.js","js/query.js","js/recommend.js"]
+      "js": ["js/jquery.js","js/parse_book.js","js/recommend.js","js/query.js"]
     }
   ],
   "permissions": [
