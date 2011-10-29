@@ -2,7 +2,7 @@
   "name": "Douban Mashuper",
   "version": "1.1",
   "description": "It makes more Doubaner from UESTC happier.",
-//  "background_page": "bg.html",
+  "background_page": "bg.html",
   "browser_action": {
     "default_title": "Lib of UESTC",
     "default_icon": "logo.png",
@@ -20,4 +20,3 @@
  "tabs", "http://*/*","https://*/*"  
   ]
 }
-//chrome.browserAction.onClicked.addListener(function(Tab tab) {...});
