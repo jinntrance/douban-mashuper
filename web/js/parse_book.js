@@ -33,7 +33,7 @@ function parse() {
         "mention":"",
         "other":ISBN_string
     }
-    alert(ISBN_string);
+//    alert(ISBN_string);
     //alert(book_detail.other);
 }
 function contains(element, s) {
