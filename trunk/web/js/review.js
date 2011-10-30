@@ -9,7 +9,7 @@ function displayReview() {
     sets = 0 < $(isbn_class_selector1).length ? $(isbn_class_selector1) : $(isbn_class_selector2)
     if (null != sets && 0 < sets.length) {
         isbn = sets.text().trim().split(' ')[0];
-        if (10 != isbn.length || 13 != isbn.length)//isbn 不正确，则不查询
+        if (9> isbn.length)//isbn 不正确，则不查询
             return null;
     } else return null;
     var review_url = book_url + isbn + review_suffix;
