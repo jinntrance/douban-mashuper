@@ -15,6 +15,6 @@ dt.review{
     padding: 2px;
 }
 #pop_img{
-    position: fixed;
+    position: absolute;
     background-image:url("icon_3d.png")
 }
