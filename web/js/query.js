@@ -3,13 +3,14 @@ var loc_3d = 'http://121.49.98.194:8080/dzkj/TSDW/GotoFlash.aspx?szBarCode=';//3
 var re_url="http://webpac.uestc.edu.cn/acquire*chx";//推薦圖書URL
 var list_id='r_list'; //右面列表div's id
 var fullUrl;
+var bk_displayed_selector='.bibDisplayContentMain';
 function handleIt() {
-    var text = $("#info").text();
+    var text = $(info_id).text();
     var ISBN_index = text.indexOf("ISBN") + 5;//"ISBN：" contains 5 chars
     var ISBN = text.substring(ISBN_index, text.length).trim();//the ISBN of the book that the current page displays
     fullUrl = url + "SEARCH=" + ISBN + "&sortdropdown=-&searchscope=1";//1代表查詢全部館藏
     $.post(fullUrl, function(data) {
-        var m = $(data).find('.bibDisplayContentMain');//有結果顯示
+        var m = $(data).find(bk_displayed_selector);//有結果顯示
         insertSidebar(); //添加顯示區域
         if (null != m && 0 < m.length) {
             displayRecord(data);//顯示館藏信息
