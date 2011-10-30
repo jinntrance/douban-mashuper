@@ -1,6 +1,6 @@
 {
   "name": "Douban Mashuper",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "It makes more Doubaner from UESTC happier.",
   "background_page": "bg.html",
  "options_page": "options.html",
