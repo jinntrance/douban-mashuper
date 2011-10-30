@@ -1,0 +1,12 @@
+#review_list{
+    text-align: left;
+    font-size: 12px;
+}
+.space{
+    height: 13px;
+    background-color: white;
+}
+dt.review{
+    font-weight: bold;
+    margin: 4px;
+}
