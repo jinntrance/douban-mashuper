@@ -6,9 +6,9 @@
  "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": ["http://book.douban.com/subject/*","http://webpac.uestc.edu.cn/*"],
+      "matches": ["http://book.douban.com/subject/*","http://webpac.uestc.edu.cn/*","https://webpac.uestc.edu.cn/*"],
       "css": ["style.css"],
-      "js": ["js/jquery.js","js/parse_book.js","js/query.js","js/main.js"]
+      "js": ["js/jquery.js","js/parse_book.js","js/query.js","js/review.js","js/main.js"]
     }
   ],
   "permissions": [
