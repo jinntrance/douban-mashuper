@@ -1,10 +1,8 @@
-var book_detail,title,author,publisher,time_published,ISBN_string;
-
-parse();
+var book_to_recommend,info_id="#info";
 
 function parse() {
     title = $('h1').text();
-    var infos = $("#info").html().split('<br>');
+    var infos = $(info_id).html().split('<br>');
     if (0 < infos.length)
         for (var i = 0; i < infos.length; i = i + 1) {
             var d='<div>'+infos[i]+'</div>'
@@ -33,8 +31,6 @@ function parse() {
         "mention":"",
         "other":ISBN_string
     }
-//    alert(ISBN_string);
-    //alert(book_detail.other);
 }
 function contains(element, s) {
     var exp = ":contains('" + s + "')";
