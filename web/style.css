@@ -14,3 +14,7 @@ dt.review{
     margin: 8px;
     padding: 2px;
 }
+#pop_img{
+    position: fixed;
+    background-image:url("icon_3d.png")
+}

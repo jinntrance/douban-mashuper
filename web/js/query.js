@@ -19,13 +19,17 @@ function handleIt() {
         }
     });
 }
+
+function parseBarcode(element) {
+    return $(element).find('td[width="18%"]').text().trim();
+}
 /*
  * 添加可借圖書信息
  * */
 function addRecordList(l) {
     $(l).each(function (index, element) {
         var lib_loc = $(element).find('td[width="29%"]').text().trim().substring(0, 3); //館藏地點
-        var barcode = $(element).find('td[width="18%"]').text().trim(); //條碼
+        var barcode = parseBarcode(element); //條碼
         var i = index + 1;
         var loc = '3d_loc' + i;
         $(toId(list_id)).append(addResourse(loc_3d + barcode, loc, '（第' + i + '本）'));
