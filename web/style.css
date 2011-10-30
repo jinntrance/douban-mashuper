@@ -8,5 +8,9 @@
 }
 dt.review{
     font-weight: bold;
-    margin: 4px;
+    margin: 5px;
+}
+#book_review h2{
+    margin: 8px;
+    padding: 2px;
 }

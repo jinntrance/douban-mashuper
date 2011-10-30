@@ -45,7 +45,8 @@ function insertSidebar() {
  */
 function recommendToLib() {
     parse();
-    $(toId(list_id)).append(addResourse('#', 'recommend', '推荐到科大图书馆'));
+    $(toId(list_id)).append(addResourse('#', 'recommend', '推荐到科大图书馆'))
+            .find('a#recommend').attr('target','__parent');//防止推荐后还跳转到新页面
     $('#recommend').click(function() {
         $.post(form_url(), book_to_recommend, function(data) {
             var result = $(data).find(':contains("感谢您的建议") ');
@@ -84,7 +85,7 @@ function addResourse(url, id, resourse) {
  添加A鏈接
  */
 function addLink(url, id, resourse) {
-    return '<a target="_self" id="' + id + '" href="' + url + '">' + resourse + '</a>'
+    return '<a target="_blank" id="' + id + '" href="' + url + '">' + resourse + '</a>'
 }
 /*
  轉換id
