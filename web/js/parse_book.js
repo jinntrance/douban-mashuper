@@ -1,6 +1,7 @@
 var book_to_recommend,info_id="#info";
 
 function parse() {
+    var title,author,publisher,time_published,ISBN_string;
     title = $('h1').text();
     var infos = $(info_id).html().split('<br>');
     if (0 < infos.length)
