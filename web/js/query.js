@@ -50,7 +50,7 @@ function insertSidebar() {
 function recommendToLib() {
     parse();
     $(toId(list_id)).append(addResourse('#', 'recommend', '推荐到科大图书馆'))
-            .find('a#recommend').attr('target','__parent');//防止推荐后还跳转到新页面
+            .find('a#recommend').attr('target','_parent');//防止推荐后还跳转到新页面
     $('#recommend').click(function() {
         $.post(form_url(), book_to_recommend, function(data) {
             var result = $(data).find(':contains("感谢您的建议") ');
