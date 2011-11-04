@@ -17,4 +17,4 @@
 == 使用Chrome插件方法 ==
   * 下载最新版插件并解压 http://code.google.com/p/douban-mashuper/downloads/list [http://code.google.com/p/douban-mashuper/downloads/list]
   * 点击Chrome菜单 *Tools-->Extensions-->Load unpacked extension* 找到刚刚解压的位置。
-  * 安装成功后可于此两页[http://book.douban.com/subject/5401989/]豆瓣 [http://webpac.uestc.edu.cn/search*chx/i?SEARCH=9787542629586&sortdropdown=-&searchscope=1] 图书馆
+  * 安装成功后可于此两页[http://book.douban.com/subject/5401989/ 豆瓣] [http://webpac.uestc.edu.cn/search*chx/i?SEARCH=9787542629586&sortdropdown=-&searchscope=1 图书馆] 
