@@ -1,5 +1,6 @@
 #labels API
-=豆瓣API= ==(使用7-108-01707-5作测试ISBN)==
+=豆瓣API
+(使用7-108-01707-5作测试ISBN)
 
 *1.图书 GET http://api.douban.com/book/subject/isbn/{isbnID}
 
