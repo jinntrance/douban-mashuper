@@ -1,9 +1,7 @@
 var url = "http://webpac.uestc.edu.cn/search*chx/i?";//圖書館ISBN查詢
-var loc_3d = 'http://121.49.98.194:8080/dzkj/TSDW/GotoFlash.aspx?szBarCode=';//3D定位url
 var re_url="http://webpac.uestc.edu.cn/acquire*chx";//推薦圖書URL
 var list_id='r_list'; //右面列表div's id
 var fullUrl;
-var bk_displayed_selector='.bibDisplayContentMain';
 function handleIt() {
     var text = $(info_id).text();
     var ISBN_index = text.indexOf("ISBN") + 5;//"ISBN：" contains 5 chars
