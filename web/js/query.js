@@ -66,6 +66,8 @@ function recommendToLib() {
 function displayRecord(data) {
     var book_sn = $(data).find('td[width="21%"]')[0];//解析索書號
     book_sn = $(book_sn).text().trim();
+	if(undefined==book_sn||''==book_sn) 
+		book_sn='未订购或未上架';
     var book_id = 'lib_book';//館藏信息這一行
     $(toId(list_id)).append(addResourse(fullUrl, book_id, '（' + book_sn + '）'));
     $(toId(book_id)).before('电子科大有馆藏');
@@ -74,8 +76,10 @@ function displayRecord(data) {
         $(toId(book_id)).after('（可借）');
         addRecordList(l);
     }
-    else
+    else{
         $(toId(book_id)).after('（不可借）');
+		recommendToLib(); //推薦到圖書館
+	}
 }
 /*
  添加單獨一行，
