@@ -2,6 +2,8 @@ var isbn_class_selector1 = 'td:contains("标准号") + td.bibInfoData';
 var isbn_class_selector2 = 'td:contains("国际标准书号") + td.bibInfoData';
 var book_url = 'http://api.douban.com/book/subject/isbn/'
 var review_suffix = '/reviews?orderby=score&start-index=1&max-results=3';//score按照评分排序，返回3个结果
+var tag_url='http://book.douban.com/tag/'
+var tag_suffix='?type=S'//按评分排序
 var sidebar = '.bibResourceSidebar'//侧栏
 var review_id = "book_review";
 function displayReview() {
@@ -65,10 +67,17 @@ function addReview(isbn) {
     append('<div class="space"></div>')
     append('<h2>豆瓣评论</h2>')
     append('<p id=comments ></p>')
+    append('<p id=tags ></p>')
     $.get(book_url + isbn, function(data) {
         rating = $(data).find('rating');
+		tags = $(data).find('tag');
         l = $(data).find('link[rel="alternate"]').attr('href') + '/reviews';
-        $('#comments').append('<a target="_blank" href="' + l + '">' + rating.attr('numRaters') + '</a>人评价').wrap('<div class=comments ></div>');
+        $('#comments').append('<a target="_blank" href="' + l + '">' + rating.attr('numRaters') + '</a>人评分').wrap('<div class=comments ></div>');
         displayStars(rating.attr('average'));
+		$(tags).each(function(index,element){
+		tag_book=tag_url+$(this).attr('name')+tag_suffix;
+        $('#tags').append('<a target="_blank" class="tag" href="' + tag_book + '">' + $(this).attr('name') + '</a>');
+		});
+		$('#tags a').wrapInner('<span class=tag_div ></span>');
     })
 }

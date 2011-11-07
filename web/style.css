@@ -18,3 +18,8 @@ dt.review{
     position: absolute;
     background-image:url("icon_3d.png")
 }
+.tag_div {
+	padding: 4px;
+	font-size: medium;
+	color: blue;
+}
