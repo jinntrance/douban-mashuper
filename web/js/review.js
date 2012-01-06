@@ -71,7 +71,7 @@ function addReview(isbn) {
     $.get(book_url + isbn, function(data) {
         rating = $(data).find('rating');
 		tags = $(data).find('tag');
-        l = $(data).find('link[rel="alternate"]').attr('href') + '/reviews';
+        l = $(data).find('link[rel="alternate"]').attr('href') + '/collections';/*所有評分人員*/
         $('#comments').append('<a target="_blank" href="' + l + '">' + rating.attr('numRaters') + '</a>人评分').wrap('<div class=comments ></div>');
         displayStars(rating.attr('average'));
 		$(tags).each(function(index,element){
