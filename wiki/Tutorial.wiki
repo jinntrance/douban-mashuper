@@ -15,5 +15,5 @@
 
 
 == 使用Chrome插件方法 ==
-  * 点击插件安裝  [https://code.google.com/p/douban-mashuper/source/browse/trunk/dist/douban%20mashuper.crx 插件]
+  * 点击插件安裝  [https://douban-mashuper.googlecode.com/svn/trunk/dist/douban%20mashuper.crx 插件]
   * 安装成功后可于此两页[http://book.douban.com/subject/5401989/ 豆瓣] [http://webpac.uestc.edu.cn/search*chx/i?SEARCH=9787542629586&sortdropdown=-&searchscope=1 图书馆] 
