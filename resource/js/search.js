@@ -1,8 +1,8 @@
-﻿var book_url='http://book.douban.com/subject_search?search_text='
-var movie_url='http://movie.douban.com/subject_search?search_text='
-var music_url='http://music.douban.com/subject_search?search_text='
+﻿var book_url='http://book.douban.com/subject_search?cat=1001&search_text='
+var movie_url='http://movie.douban.com/subject_search?cat=1002&search_text='
+var music_url='http://music.douban.com/subject_search?cat=1003&search_text='
 var parent =chrome.contextMenus.create(
-    {'type':'normal','title':'豆瓣一下下','contexts':['selection']}, function(){});
+    {'type':'normal','title':'豆瓣一下下(搜书)','onclick':search,'contexts':['selection']}, function(){});
 // Create a parent item and two children.
 var book = chrome.contextMenus.create(
     {"title": "搜图书", "parentId": parent, "onclick": searchBook,'contexts':['selection']}, function(){});
@@ -32,9 +32,11 @@ function formURL(type,selectedText){
     var newURL='http://book.douban.com/subject_search?search_text='+selectedText;/*选取文字加url完成*/
     switch (type){
        case "book":
+            newURL=book_url+selectedText;break;
        case "movie":
+            newURL=movie_url+selectedText;break;
        case "music":
-             newURL="http://"+type+".douban.com/subject_search?search_text="+selectedText;
+             newURL=music_url+selectedText;break;
     }
     return {
         'url':newURL,
