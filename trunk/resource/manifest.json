@@ -1,9 +1,12 @@
 {
   "name": "Douban Mashuper",
-  "version": "2.0",
-  "description": "It makes more Doubaner from UESTC happier.",
-  "background_page": "bg.html",
+  "version": "2.1.0",
+  "manifest_version": 2,
+  "description": "It makes more Doubaners from UESTC happier.",
  "options_page": "options.html",
+  "background": {
+        "scripts": ["js/search.js"]
+    },
   "content_scripts": [
   {
       "matches": ["http://book.douban.com/subject/*"],
@@ -18,5 +21,9 @@
   ],
   "permissions": [
 	"contextMenus","tabs", "http://*/*","https://*/*"  
-  ]
+  ],
+  "web_accessible_resources": [
+        "icon_3d.png",
+        "logo.png"
+    ]
 }
