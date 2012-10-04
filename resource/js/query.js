@@ -38,7 +38,7 @@ function addRecordList(l) {
  添加側欄
  */
 function insertSidebar() {
-    $('div .infobox').after('<div id="resourse" class="gray_ad"></div>');
+    $('div#buyinfo').after('<div id="resourse" class="gray_ad"></div>');
     $('#resourse').append("<h2>图书资源</h2>")
     $('#resourse').append("<ul id='"+list_id+"'></ul>")
 }
