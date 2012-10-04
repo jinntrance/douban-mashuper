@@ -1,6 +1,8 @@
 ﻿var book_url='http://book.douban.com/subject_search?cat=1001&search_text='
 var movie_url='http://movie.douban.com/subject_search?cat=1002&search_text='
 var music_url='http://music.douban.com/subject_search?cat=1003&search_text='
+chrome.contextMenus.create(
+    {'type':'normal','title':'豆瓣搜书','onclick':search,'contexts':['selection']}, function(){});
 var parent =chrome.contextMenus.create(
     {'type':'normal','title':'豆瓣一下下(搜书)','onclick':search,'contexts':['selection']}, function(){});
 // Create a parent item and two children.
