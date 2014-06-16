@@ -1,8 +1,8 @@
 {
-  "name": "Douban Mashuper",
-  "version": "2.1.0",
+  "name": "电子科技大学图书馆豆瓣插件Douban Mashuper",
+  "version": "2.2.0",
   "manifest_version": 2,
-  "description": "It makes more Doubaners from UESTC happier.",
+  "description": "电子科技大学图书馆豆瓣插件，查看馆藏更方便，看评论更精准。",
  "options_page": "options.html",
   "background": {
         "scripts": ["js/search.js"]
