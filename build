@@ -1,0 +1,3 @@
+#!/bin/sh
+find . -name "*~" -exec rm -f {} +
+tar -cvf "dist/douban mashuper.zip" resource/*
