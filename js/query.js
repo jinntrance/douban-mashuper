@@ -19,7 +19,7 @@ function handleIt() {
 }
 
 function parseBarcode(element) {
-    return $(element).find('td[width="18%"]').text().trim();
+    return $(element).find('td')[3].textContent.match(/\d{3,}/)[0].trim();
 }
 /*
  * 添加可借圖書信息
