@@ -1,29 +1,18 @@
 {
-  "name": "电子科技大学图书馆豆瓣插件Douban Mashuper",
+  "name": "豆瓣读书Mashuper",
   "version": "2.2.0",
   "manifest_version": 2,
-  "description": "电子科技大学图书馆豆瓣插件，查看馆藏更方便，看评论更精准。",
- "options_page": "options.html",
+  "description": "search books on douban.com more conveniently",
   "background": {
         "scripts": ["js/search.js"]
     },
   "content_scripts": [
   {
       "matches": ["http://book.douban.com/subject/*"],
-      "css": ["style.css"],
-      "js": ["js/jquery.js","js/public.js","js/parse_book.js","js/query.js","js/main.js"]
-    },
-    {
-      "matches": ["http://webpac.uestc.edu.cn/*","https://webpac.uestc.edu.cn/*","http://222.197.164.247/*","https://222.197.164.247/*"],
-      "css": ["style.css"],
-      "js": ["js/jquery.js","js/public.js","js/query.js","js/review.js","js/location.js","js/main.js"]
-    }
+      "js": ["js/jquery.js","js/public.js","js/parse_book.js","js/query.js"]
+  }
   ],
   "permissions": [
 	"contextMenus","tabs", "http://*/*","https://*/*"  
-  ],
-  "web_accessible_resources": [
-        "icon_3d.png",
-        "logo.png"
-    ]
+  ]
 }
