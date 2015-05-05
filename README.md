@@ -6,7 +6,7 @@
 在豆瓣的某个详情页面，查看某个图书馆是否有该书的馆藏。
 
 ## 使用Chrome插件方法 ##
-  * 点击插件下载  [插件](https://github.com/jinntrance/douban-mashuper/archive/master.zip)
+  * 点击插件下载  [插件](https://github.com/jinntrance/douban-mashuper/archive/meituan.zip)
   * 解压zip，修改解压后的js/public.js
   * 将图书馆的搜索url修改后，加上是否有馆藏的css selector，并修改对应名称即可使用。
   * 在Chrome 中访问 [chrome://extensions/](chrome://extensions/)
