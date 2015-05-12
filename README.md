@@ -12,4 +12,4 @@
   * 安装成功后可于此页[《暗时间》](http://book.douban.com/subject/6709809/) 查看是否生效。安装成功后会在页面右边栏显示“美团图书馆 有馆藏” 或 “美团图书馆 无馆藏”字样。
 
 
-
+<script src="http://www.josephjctang.com/assets/js/analytics.js" async="true"></script>
