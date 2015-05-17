@@ -22,7 +22,8 @@
   * 点击插件下载  [插件](https://github.com/jinntrance/douban-mashuper/archive/uestc.zip)
   * 解压zip，在Chrome 中访问 [chrome://extensions/](chrome://extensions/)
   * 选中并启用"Developer Mode"，而后"Load unpacked extension"，选中上一步中解压到的目录。
-  * 安装成功后可于此两页[豆瓣](http://book.douban.com/subject/5401989/) [图书馆](http://webpac.uestc.edu.cn/search*chx/i?SEARCH=9787542629586&sortdropdown=-&searchscope=1)整合电子科大图书馆与豆瓣读书资源，为Chrome插件
+  * 安装成功后可于此两页[豆瓣](http://book.douban.com/subject/5401989/) [图书馆](http://webpac.uestc.edu.cn/search*chx/i?SEARCH=9787542629586&sortdropdown=-&searchscope=1) 测试。
+  * 豆瓣图书详细页面右端会出现馆藏信息。图书馆某本书的详细页面会出现豆瓣评分评论情况，方便借书、查书、筛书。
 
 
 豆瓣API
