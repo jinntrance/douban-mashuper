@@ -1,0 +1,149 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+
+  <title>Douban-mashuper</title>
+  <meta name="description" content="豆瓣图书中查看某图书馆是否有馆藏">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Douban-mashuper</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">豆瓣图书中查看某图书馆是否有馆藏</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/jinntrance/douban-mashuper/tarball/uestc" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/jinntrance/douban-mashuper/zipball/uestc" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/jinntrance/douban-mashuper/tree/uestc/" class="code">View Douban-mashuper on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="暂只为电子科大图书馆使用" class="anchor" href="#%E6%9A%82%E5%8F%AA%E4%B8%BA%E7%94%B5%E5%AD%90%E7%A7%91%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%E4%BD%BF%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>暂只为电子科大图书馆使用</h1>
+
+<h1>
+<a id="使用指南" class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用指南</h1>
+
+<h2>
+<a id="使用场景" class="anchor" href="#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用场景</h2>
+
+<p>1.你使用Google Chrome浏览器
+2.最好Chrome版本在13及以上</p>
+
+<h2>
+<a id="插件功能" class="anchor" href="#%E6%8F%92%E4%BB%B6%E5%8A%9F%E8%83%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>插件功能</h2>
+
+<h1>
+<a id="任意页面" class="anchor" href="#%E4%BB%BB%E6%84%8F%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>任意页面</h1>
+
+<ul>
+<li>选中书名右键“豆瓣一下下”即可在豆瓣上搜索</li>
+</ul>
+
+<h1>
+<a id="于豆瓣某书信息页面" class="anchor" href="#%E4%BA%8E%E8%B1%86%E7%93%A3%E6%9F%90%E4%B9%A6%E4%BF%A1%E6%81%AF%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>于豆瓣某书信息页面</h1>
+
+<ul>
+<li>可查科大图书馆馆藏（含索书号和3D定位功能）</li>
+<li>将某书推荐至图书馆</li>
+</ul>
+
+<h1>
+<a id="于图书馆某书信息页面" class="anchor" href="#%E4%BA%8E%E5%9B%BE%E4%B9%A6%E9%A6%86%E6%9F%90%E4%B9%A6%E4%BF%A1%E6%81%AF%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>于图书馆某书信息页面</h1>
+
+<ul>
+<li>可查看该书豆瓣评分和3则评论</li>
+<li>使用该书3D定位</li>
+</ul>
+
+<h2>
+<a id="使用chrome插件方法" class="anchor" href="#%E4%BD%BF%E7%94%A8chrome%E6%8F%92%E4%BB%B6%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用Chrome插件方法</h2>
+
+<ul>
+<li>点击插件下载  <a href="https://github.com/jinntrance/douban-mashuper/archive/uestc.zip">插件</a>
+</li>
+<li>解压zip，在Chrome 中访问 chrome://extensions/</li>
+<li>选中并启用"Developer Mode"，而后"Load unpacked extension"，选中上一步中解压到的目录。</li>
+<li>安装成功后可于此两页<a href="http://book.douban.com/subject/5401989/">豆瓣</a> <a href="http://webpac.uestc.edu.cn/search*chx/i?SEARCH=9787542629586&amp;sortdropdown=-&amp;searchscope=1">图书馆</a>整合电子科大图书馆与豆瓣读书资源，为Chrome插件</li>
+</ul>
+
+<h2>
+<a id="豆瓣api" class="anchor" href="#%E8%B1%86%E7%93%A3api" aria-hidden="true"><span class="octicon octicon-link"></span></a>豆瓣API</h2>
+
+<p>(使用7-108-01707-5作测试ISBN)</p>
+
+<p><strong>1.图书 GET <a href="http://api.douban.com/book/subject/isbn/7-108-01707-5">http://api.douban.com/book/subject/isbn/{isbnID}</a></strong></p>
+
+<p><strong>2.评论 GET <a href="http://api.douban.com/book/subject/isbn/7-108-01707-5/reviews">http://api.douban.com/book/subject/isbn/{isbnID}/reviews</a></strong></p>
+
+<p>例子GET <a href="http://api.douban.com/movie/subject/isbn/7-108-01707-5/reviews?start-index=1&amp;max-results=2">http://api.douban.com/movie/subject/isbn/7-108-01707-5/reviews?start-index=1&amp;max-results=2</a></p>
+
+<pre><code>参数  意义  备注
+start-index 起始元素
+max-results 返回结果的数量
+orderby 排序方式    书影音的所有评论支持该参数
+score，按投票排序（默认）
+time，按发布时间排序
+</code></pre>
+
+<p><strong>3.搜索
+GET <a href="http://api.douban.com/book/subjects?tag=cowboy&amp;start-index=1&amp;max-results=2">http://api.douban.com/book/subjects?tag=cowboy&amp;start-index=1&amp;max-results=2</a></strong></p>
+
+<pre><code>参数  意义  备注
+q   全文检索的关键词
+tag 搜索特定tag
+start-index 起始元素
+max-results 返回结果的数量'
+</code></pre>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/jinntrance" class="avatar"><img src="https://avatars2.githubusercontent.com/u/2414660?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/jinntrance">jinntrance</a> maintains <a href="https://github.com/jinntrance/douban-mashuper">Douban-mashuper</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/jinntrance/douban-mashuper/tarball/uestc" class="tar">tar</a><a href="https://github.com/jinntrance/douban-mashuper/zipball/uestc" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+  <script type="text/javascript" src="http://www.josephjctang.com/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="http://www.josephjctang.com/assets/js/analytics.js" sync="sync"></script>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-39438576-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
