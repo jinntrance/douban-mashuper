@@ -1,9 +1,8 @@
 {
   "name": "电子科技大学图书馆豆瓣插件Douban Mashuper",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "manifest_version": 2,
   "description": "电子科技大学图书馆豆瓣插件，查看馆藏更方便，看评论更精准。",
- "options_page": "options.html",
   "background": {
         "scripts": ["js/search.js"]
     },
