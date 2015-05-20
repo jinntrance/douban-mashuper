@@ -3,10 +3,15 @@ var search_prefix = "https://www.gutenberg.org/ebooks/search/?query=" // 搜索u
 lib_prefix="Project Gutenberg" //藏书图书馆名字
 
 
+$.ajaxSetup({
+async: false
+});
+
 function get_html(url,callback){
   $.ajax({
     type:"GET",
     dataType : 'html',
+    async: false;
     beforeSend: function (request)
     {
         request.setRequestHeader("Cache-Control", "max-age=0");
