@@ -4,7 +4,7 @@ titles=[]
 books=[]
 window.limit = 1
 books_in_lib = []
-$.getJSON(url+0, function(json){
+$.getJSON(url+"0&count=1", function(json){
     window.limit = Math.ceil(1.0 * json.total / count)
 })
 for(var i = 0; i<window.limit;i++){
