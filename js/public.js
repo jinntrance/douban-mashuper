@@ -3,10 +3,15 @@ var search_prefix = "http://mit.sankuai.com/book/books?keyword="; // 搜索url�
 lib_prefix="美团图书馆" //藏书图书馆名字
 
 
+$.ajaxSetup({
+async: false
+});
+
 function get_html(url,callback){
   $.ajax({
     type:"GET",
     dataType : 'html',
+    async: false;
     beforeSend: function (request)
     {
         request.setRequestHeader("Cache-Control", "max-age=0");
