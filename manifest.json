@@ -10,6 +10,10 @@
   {
       "matches": ["http://book.douban.com/subject/*"],
       "js": ["js/jquery.js","js/public.js","js/parse_book.js","js/query.js"]
+  },
+  {
+      "matches": ["http://book.douban.com/people/**wish*"],
+      "js": ["js/jquery.js","js/public.js","js/douban.js"]
   }
   ],
   "permissions": [
