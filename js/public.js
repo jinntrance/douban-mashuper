@@ -11,7 +11,6 @@ function get_html(url,callback){
   $.ajax({
     type:"GET",
     dataType : 'html',
-    async: false;
     beforeSend: function (request)
     {
         request.setRequestHeader("Cache-Control", "max-age=0");
