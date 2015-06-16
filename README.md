@@ -1,4 +1,4 @@
-# 豆瓣图书某图书馆馆藏信息
+# 豆瓣图书某图书馆馆藏信息 (http://josephjctang.com/douban-mashuper/)
 # 使用指南 #
 
 ## 插件功能 ##
