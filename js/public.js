@@ -1,6 +1,6 @@
-var bk_displayed_selector='li.booklink'; // 改页面解析，判断是否有藏书的selector , json must start with `$` such as '$.0.name'
-var search_prefix = "//www.gutenberg.org/ebooks/search/?query=" // 搜索url，只需要加搜索书名
-lib_prefix="Project Gutenberg" //藏书图书馆名字
+var bk_displayed_selectors=['li.booklink', '#atfResults #result_0 .s-price']; // 改页面解析，判断是否有藏书的selector , json must start with `$` such as '$.0.name'
+var search_prefixes = ["//www.gutenberg.org/ebooks/search/?query=","//www.amazon.cn/s/?url=search-alias%3Ddigital-text&field-keywords="]; // 搜索url，只需要加搜索书名
+lib_prefixes= ["Project Gutenberg", "Kindle 电子书"] //藏书图书馆名字
 
 
 $.ajaxSetup({
