@@ -1,5 +1,5 @@
 var bk_displayed_selector='cbooks li'; // 改页面解析，判断是否有藏书的selector 
-var search_prefix = "http://book.sankuai.com/#/search?q="; // 搜索url，只需要加搜索书名
+var search_prefix = "//api-mit.sankuai.com/library/books?q="; // 搜索url，只需要加搜索书名
 lib_prefix="美团图书馆" //藏书图书馆名字
 
 
