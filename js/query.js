@@ -6,8 +6,18 @@ function handleIt() {
     var ISBN = book.isbn;
     fullUrl = search_prefix + book.title;
     get_html(fullUrl, function(data) {
-        var m = $(data).find(bk_displayed_selector);//有結果顯示 
-        if (null != m && 0 < m.length) {
+        var m = undefined;
+        if (bk_displayed_selector[0] == '$') {
+          var selectors = bk_displayed_selector.split('.')
+          var json = $.parseJSON(data)
+          for(var i = 1; i < selectors.length;i++) {
+            json = json[selectors[i]]
+          }
+          m = json;
+        } else {
+          m = $(data).find(bk_displayed_selector);//有結果顯示 
+        }
+        if (null != m && m != undefined && 0 < m.length) {
 	        insertSidebar("有馆藏"); //添加顯示區域
         } else {
         	insertSidebar("无馆藏");
