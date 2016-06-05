@@ -1,4 +1,4 @@
-# [豆瓣图书某图书馆馆藏信息] (http://josephjctang.com/douban-mashuper/)
+# [豆瓣图书图书馆馆藏查询] (http://josephjctang.com/douban-mashuper/)
 # 使用指南 #
 
 ## 插件功能 ##
@@ -15,4 +15,17 @@
   * 安装成功后可于此页[On Liberty](http://book.douban.com/subject/4748586/) 查看是否生效。
 
 
+# 可用图书馆
+
+* 电子书
+    - [Project Gutenberg](http://www.gutenberg.org/)
+    - [World Public Library](http://worldlibrary.net/)
+    - [Open Library](https://openlibrary.org/)
+    - [Library Genesis](http://gen.lib.rus.ec/)
+    - [Amazon Free Collections](http://amzn.to/IurnrM)
+    - [鸠摩搜索](https://www.jiumodiary.com/)
+    
+* 有声
+    - [LibriVox](https://librivox.org/)
+    - [Audio Cat](http://audioc.at/)
 
